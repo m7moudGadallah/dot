@@ -1,0 +1,21 @@
+[user]
+	name = m7moudGadallah
+	email = mahmoudgadallah876@gmail.com
+[core]
+	editor = vim
+[alias]
+	st = status
+	ci = commit
+	br = branch
+	co = checkout
+	unstage = reset HEAD --
+	lol = log --oneline
+	hlol = log --oneline -5
+	sst = status -s
+[push]
+	default = current
+[pull]
+	default = current
+	rebase = true
+[init]
+	defaultBranch = main
