@@ -1,0 +1,10 @@
+# Function to get the current Git branch
+parse_git_branch() {
+  branch=$(git branch --show-current 2>/dev/null)
+  if [[ -n "$branch" ]]; then
+    echo " ($branch)"
+  fi
+}
+
+# Update PS1 dynamically
+export PROMPT_COMMAND='PS1="\[\e[32m\]\w\[\e[33m\]$(parse_git_branch)\n\[\e[0m\]> "'
